@@ -23,6 +23,8 @@ const colorCodes: Record<string, string> = {
 let text = "";
 let shouldClose = false;
 
+let scroll = false;
+
 export const playCloseTerminalAnimation = () => {
     shouldClose = true;
     setTimeout(() => {
@@ -34,11 +36,13 @@ export const clearTerminal = () => {
     text = "";
 }
 
-export const printTextToScreen = (str: string, count: number, callback: () => void, defaultDelay = 5) => {
+export const printTextToScreen = (str: string, count: number, sound: any, beep: any, callback: () => void, defaultDelay = 5, typeEnabled = false) => {
     if(str == "") {
         callback();
         return;
     }
+    scroll = true;
+
     let textlen = 0;
     let delay = defaultDelay;
     let toAdd = str.substring(0, count)
@@ -52,16 +56,32 @@ export const printTextToScreen = (str: string, count: number, callback: () => vo
             delay = parseInt(parse_delay);
             toAdd = toAdd.replaceAll(/<delay:[0-9]*>/g, "")
         }
+        if(toAdd.includes("<beep>")) {
+            toAdd.replace("<beep>", "")
+            beep({forceSoundEnabled: true});
+        }
+        if(toAdd.includes("<type:on>")) {
+            toAdd.replace("<type:on>", "")
+            typeEnabled = true;
+        }
+        if(toAdd.includes("<type:off>")) {
+            toAdd.replace("<type:off>", "")
+            typeEnabled = false;
+        }
         if(toAdd.includes("<end>")) {
             toAdd = toAdd.substring(0, toAdd.indexOf("<end>"));
             str = "";
         }
     }
-    toAdd = toAdd.replaceAll('\n', '<br>')
+    if (typeEnabled)
+        sound({
+            forceSoundEnabled: true,
+            playbackRate: Math.random() * 2 + 0.5
+        });
     text += toAdd
     
     setTimeout(() => {
-        printTextToScreen(str.substring(textlen), count, callback, defaultDelay);
+        printTextToScreen(str.substring(textlen), count, sound, beep, callback, defaultDelay, typeEnabled);
     }, delay)
 }
 
@@ -73,8 +93,11 @@ export default () => {
         Object.keys(colorCodes).forEach(code => {
             text = text.replaceAll(code, colorCodes[code])
         })
-        screen.current.innerHTML = text + (Math.floor(Date.now()/1000) % 2 == 0 ? "" : "█");
-        screen.current.scrollTop = screen.current.scrollHeight;
+        screen.current.innerHTML = text + (Math.floor(Date.now()/1000) % 2 == 0 ? "&nbsp;" : "█");
+        if(scroll) {
+            screen.current.scrollTop = screen.current.scrollHeight;
+            scroll = false;
+        }
 
         if(shouldClose) {
             screen.current.classList.add("DocumentClose")

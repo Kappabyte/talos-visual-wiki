@@ -40,10 +40,30 @@ export const printDocumentToScreen = (str: string, count: number, callback: () =
         return;
     };
     let textlen = 0;
+    
     let delay = 5;
     let toAdd = str.substring(0, count)
     textlen = toAdd.length;
-    toAdd = toAdd.replaceAll('\n', '<br>')
+    if(toAdd.includes("<")) {
+        toAdd = str.substring(0, str.indexOf(">") + 1);
+        textlen = toAdd.length;
+        if(toAdd.includes("<delay:")) {
+            let parse_delay = toAdd.split("<delay:")[1];
+            parse_delay = parse_delay.substring(0, parse_delay.indexOf(">"));
+            delay = parseInt(parse_delay);
+            toAdd = toAdd.replaceAll(/<delay:[0-9]*>/g, "")
+        }
+        if(toAdd.includes("<redirect:")) {
+            let parse_location = toAdd.split("<redirect:")[1];
+            parse_location = parse_location.substring(0, parse_location.indexOf(">"));
+            toAdd = toAdd.replaceAll(/<redirect:.*>/g, "")
+            window.location.href = parse_location
+        }
+        if(toAdd.includes("<end>")) {
+            toAdd = toAdd.substring(0, toAdd.indexOf("<end>"));
+            str = "";
+        }
+    }
     text += toAdd
     
     setTimeout(() => {

@@ -1,29 +1,48 @@
-a
-@(document:original)[lit_arch 1912CE]athena12.txt
-Twelve: The Council of Zeus
+Loading about session<delay:250>.<delay:250>.<delay:250>.<delay:250> Done.
+Connecting network drives<delay:250>.<delay:250>.<delay:250>.<delay:250>.<delay:250>.<delay:250>.<delay:250> <beep>Success!<delay:1000>
+Locating about information<delay:250>.<delay:250>.<delay:250>.<delay:250> [4] distributed resources found
 
-&41 53 #4345 4E 44 20 4F4C 59 4D 5055 53 the great bronze bulls pulled the carriage forward, mighty bursts of steam issuing from their nostrils. Finally, they came to the gates at the top of th&/§
 
-USER.set(#43 #4849 #4C 44 20 %4F46 205A 45 5553)
+About session ready.
 
-Here assembled were all the many generations of the gods, and demigods and souls of mortals; steel and bronze and iron, and memory of flesh. The clouds parted far beneath, revealing the beautiful plains of Macedon, where great gleaming cities had once #536 
+><delay:500> <type:on><color:light_cyan>l<delay:50>i<delay:50>s<delay:50>t<delay:50><color:reset><type:off>
 
-@(document:translated)[lit_arch 1912CE]athena12.txt
-Twelve: The Council of Zeus
+Searching resources.<delay:500>.<delay:500>.
 
-ASCEND OLYMPUS the great bronze bulls pulled the carriage forward, mighty bursts of steam issuing from their nostrils. Finally, they came to the gates at the top of th&/§
+<end>
+@(document:original)[webcrawl 2022] Credits.eml
+Code by: Kappabyte
 
-USER.set(CHILD OF ZEUS)
+Special Thanks To:
+ • Evil Vasile on Steam for a list of terminal files</li>
+ • The Talos Principle Wiki for file contents and translations
+ • The Talos Principle speedrunning community for a list of QR codes
+ • Croteam and Devolver Digital for the amazing game
 
-Here assembled were all the many generations of the gods, and demigods and souls of mortals; steel and bronze and iron, and memory of flesh. The clouds parted far beneath, revealing the beautiful plains of Macedon, where great gleaming cities had once #536 
+Sounds and images are property of Croteam and Devolver Digital.
+This site is not affliated with Croteam or Devolver Digital
 
-@(document:original)[webcrawl 2010/05/07]HIS1A_rome.html
-[UA-HIS1A] Prof. Dr. Armin Hoolock, "The Fall of the Roman Empire: A Dialectical Approach"
-
-#\&$((? caption="Homo sum: humani nihil a me alienum puto." #*[
-
-But, interesting as such perspectives of the decline and ultimate dissolution of the Roman Empire may be, they ultimately put too much emphasis on individual catastrophic events. The real question that must be asked is why the Roman Empire, which had dealt with so many threats and catastrophes over the years, was so incapable of responding to these later problems.
-
-We must investigate the division of wealth, the structure of government, the location of power in Roman society. Had the Republic survived or been restored, would Rome still have fallen? What was the role of debt and slavery in creating the conditions for what we now call the Dark Ages? "Rome," the saying goes, "was not built in a day." It didn't fall in a day, either.
-
-To register for the class, please email &&&
+@(document:original)[webcrawl 2022] Libraries.lst
+@testing-library/jest-dom: 5.16.5
+@testing-library/react: 13.3.0
+@testing-library/user-event: 13.5.0
+@types/jest: 27.5.2
+@types/node: 16.11.54
+@types/react: 18.0.17
+@types/react-dom: 18.0.6
+csv-parser: 3.0.0
+konva: 8.3.11
+react: 18.2.0
+react-dom: 18.2.0
+react-konva: 18.2.1
+react-scripts: .0.1
+typescript: 4.7.4
+use-image: 1.0.12
+use-sound: 4.0.1
+web-vitals: 2.1.
+@(document:original)[webcrawl 2022] SourceCode.lnk
+Opening the source on Github<delay:250>.<delay:250>.<delay:250>.<delay:1000>
+<redirect:https://github.com/Kappabyte/talos-visual-wiki>
+@(document:original)[webcrawl 2022] TheTalosPrinciple.lnk
+Opening the Talos Principle on Steam<delay:250>.<delay:250>.<delay:250>.<delay:1000>
+<redirect:https://store.steampowered.com/app/257510/The_Talos_Principle/>
