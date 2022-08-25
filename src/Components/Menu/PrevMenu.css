@@ -1,0 +1,39 @@
+@keyframes MenuPrev2 {
+    0% {
+        width: 50%;
+        left: 35%;
+        top: 25%;
+        opacity: 100%;
+        transform: scale(100%);
+    }
+    100% {
+        width: 25%;
+        left: 0%;
+        top: 25%;
+        opacity: 25%;
+        transform: scale(50%);
+    }
+}
+
+.PrevMenu {
+    animation: MenuPrev2 .3s ease-out 1 forwards;
+    position: absolute;
+    height: 500px;
+    width: 25%;
+    left: 0%;
+    top: 25%;
+    opacity: 25%;
+    transform: scale(50%);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.PrevMenu ul {
+    list-style-type: none;
+}
+
+.PrevMenu h1 {
+    width: auto;
+    text-align: left;
+    margin-left: 40px;
+}

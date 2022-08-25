@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+
+@keyframes pulse {
+  0% {
+    color: rgb(255, 235, 122);
+    text-shadow: 0px 0px 5px;
+  }
+  50% {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 0px;
+  }
+  100% {
+    color: rgb(255, 235, 122);
+    text-shadow: 0px 0px 5px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans';
+  font-weight: 100;
+  letter-spacing: 3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+  color: lightgray;
+  font-size: 2em;
+}
+
+h1 {
+  width: 100%;
+  margin: 0px;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 5px;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+}
+
+a:hover {
+  animation: pulse 0.75s linear infinite;
+  color: rgb(255, 235, 122);
+  cursor: pointer;
+  text-shadow: 0px 0px 5px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

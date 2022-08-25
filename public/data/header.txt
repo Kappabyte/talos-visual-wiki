@@ -1,0 +1,11 @@
+Loading library session.<delay:500>.<delay:500>. Done.
+Mounting local disks.<delay:500>.<delay:500>. [47 million] distributed resources found
+Connecting network drives..<delay:500>..<delay:500>.. Error: network inaccessable
+
+
+Library archive session ready.
+
+><delay:100> <color:light_cyan>l<delay:50>i<delay:50>s<delay:50>t<delay:50><color:reset>
+
+Searching for locally cached resources.<delay:500>.<delay:500>.
+

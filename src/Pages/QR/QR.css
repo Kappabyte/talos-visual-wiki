@@ -1,0 +1,13 @@
+.graph-holder {
+    display: grid;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    grid-template-rows: 64px auto 64px;
+    width: 100%;
+    height: 100%;
+}
+
+.graph-holder>div {
+    overflow: hidden;
+}

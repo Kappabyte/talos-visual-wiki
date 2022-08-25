@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@keyframes DocumentSpawn {
+    0% {
+        transform: scaleX(0%) scaleY(0%);
+    }
+    10% {
+        transform: scaleX(10%) scaleY(1%);
+    }
+    70% {
+        transform: scaleX(100%) scaleY(70%);
+    }
+    100% {
+        transform: scaleX(100%) scaleY(100%);
+    }
+}
+
+@keyframes DocumentClose {
+    0% {
+        transform: scaleX(100%) scaleY(100%);
+    }
+    30% {
+        transform: scaleX(10%) scaleY(70%);
+    }
+    90% {
+        transform: scaleX(10%) scaleY(1%);
+    }
+    100% {
+        transform: scaleX(0%) scaleY(0%);
+    }
+}
+.Terminal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: black;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.Screen {
+    animation: DocumentSpawn 1s linear 1 forwards;
+    width: calc(100% - 60px);
+    height: calc(100% - 200px);
+    background: black;
+    border: 5px solid lightgray;
+    overflow-y: scroll;
+    padding: 25px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.65em;
+    line-height: 1.2em;
+}
+
+.DocumentWrapper {
+    position: absolute;
+    width: calc(100% - 60px);
+    height: calc(100% - 200px);
+    top: 0px;
+    left: 0px;
+    padding: 25px;
+    background: black;
+    border: 5px solid lightgray;
+}
+
+.Document {
+    animation: DocumentSpawn 1s linear 1 forwards;
+    position: relative;
+    width: 75%;
+    left: calc(12.5% - 25px);
+    top: 5%;
+    height: calc(90% - 70px);
+    padding: 25px;
+    background: rgb(0, 0, 22);
+    border: 5px solid lightgray;
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.65em;
+    line-height: 1.2em;
+    overflow-y: scroll;
+}
+
+.DocumentClose {
+    animation: DocumentClose 0.4s linear 1 forwards;
+}
+
+.Options {
+    display: grid;
+    width: 100%;
+    height: 140px;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: calc(140px / 3);
+    align-items: center;
+}
+
+.Options>span {
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(28, 29, 31);
+    background-color: rgb(105, 112, 128);
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.75em;
+    grid-column: auto / span auto;
+    cursor: pointer;
+}

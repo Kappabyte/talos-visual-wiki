@@ -1,0 +1,80 @@
+@keyframes MenuNext {
+    0% {
+        width: 25%;
+        left: 75%;
+        top: 25%;
+        opacity: 25%;
+        transform: scale(50%);
+    }
+    100% {
+        width: 50%;
+        left: 35%;
+        top: 25%;
+        opacity: 100%;
+        transform: scale(100%);
+    }
+}
+
+@keyframes MenuPrev {
+    0% {
+        width: 25%;
+        left: 0%;
+        top: 25%;
+        opacity: 25%;
+        transform: scale(50%);
+    }
+    100% {
+        width: 50%;
+        left: 35%;
+        top: 25%;
+        opacity: 100%;
+        transform: scale(100%);
+    }
+}
+
+.MenuStatic {
+    position: absolute;
+    height: 500px;
+    width: 50%;
+    left: 35%;
+    top: 25%;
+    opacity: 100%;
+    transform: scale(100%);
+}
+
+.MenuFromNext {
+    animation: MenuNext .3s ease-out 1 forwards;
+    position: absolute;
+    height: 500px;
+    width: 25%;
+    left: 75%;
+    top: 25%;
+    opacity: 25%;
+    transform: scale(50%);
+}
+
+.MenuFromPrev {
+    animation: MenuPrev .3s ease-out 1 forwards;
+    position: absolute;
+    height: 500px;
+    width: 25%;
+    left: 75%;
+    top: 25%;
+    opacity: 25%;
+    transform: scale(50%);
+}
+
+.Menu {
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.Menu ul {
+    list-style-type: none;
+}
+
+.Menu h1 {
+    width: auto;
+    text-align: left;
+    margin-left: 40px;
+}

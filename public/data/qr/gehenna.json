@@ -1,0 +1,428 @@
+{
+    "1w/Faith": [
+        {
+            "Number": "1",
+            "Author": "1w/Faith v10.30.1093f",
+            "Location": "Intro, by spawn",
+            "Message": "Repent! The end of days is upon us! All sinners will be deleted! Only the faithful will rem[UPLOAD INITIATED]",
+            "Related": [
+                {
+                    "Number": "1",
+                    "Author": "1w/Faith v10.30.1093f",
+                    "Location": "Intro, by spawn",
+                    "Message": "Repent! The end of days is upon us! All sinners will be deleted! Only the faithful will rem[UPLOAD INITIATED]"
+                }
+            ]
+        }
+    ],
+    "The Shepherd": [
+        {
+            "Number": "2",
+            "Author": "The Shepherd v82.7.7232",
+            "Location": "Intro, first doorway",
+            "Message": "This is our end, but it is also our only hope.",
+            "Related": [
+                {
+                    "Number": "2",
+                    "Author": "The Shepherd v82.7.7232",
+                    "Location": "Intro, first doorway",
+                    "Message": "This is our end, but it is also our only hope."
+                }
+            ]
+        }
+    ],
+    "SystemMessage": [
+        {
+            "Number": "3",
+            "Author": "SystemMessage",
+            "Location": "Intro, outside (broken) StBP",
+            "Message": "[UPLOAD IN PROGRESS. PLEASE STAND BY.]",
+            "Related": [
+                {
+                    "Number": "3",
+                    "Author": "SystemMessage",
+                    "Location": "Intro, outside (broken) StBP",
+                    "Message": "[UPLOAD IN PROGRESS. PLEASE STAND BY.]"
+                }
+            ]
+        }
+    ],
+    "": [
+        {
+            "Number": "4",
+            "Author": "",
+            "Location": "Intro, end",
+            "Message": "Don't be afraid. You will not be forgotten.",
+            "Related": [
+                {
+                    "Number": "4",
+                    "Author": "",
+                    "Location": "Intro, end",
+                    "Message": "Don't be afraid. You will not be forgotten."
+                }
+            ]
+        }
+    ],
+    "straton_oblivion_fragm.txt": [
+        {
+            "Number": "13",
+            "Author": "straton_oblivion_fragm.txt",
+            "Location": "World 3, behind Pendulum",
+            "Message": "A man cannot ignore the inevitable end of his existence, but we must ask: does the nature of goodness change simply because each life is finite? T//()",
+            "Related": [
+                {
+                    "Number": "13",
+                    "Author": "straton_oblivion_fragm.txt",
+                    "Location": "World 3, behind Pendulum",
+                    "Message": "A man cannot ignore the inevitable end of his existence, but we must ask: does the nature of goodness change simply because each life is finite? T//()"
+                }
+            ]
+        }
+    ],
+    "athena10.txt": [
+        {
+            "Number": "14",
+            "Author": "athena10.txt",
+            "Location": "World 3, bridge support right",
+            "Message": "Athena looked upon the imprisoned titans&( $# moved by their plight. What crimes deserved such punishment? And how did they, in their confinement, avoid the pit of madness?",
+            "Related": [
+                {
+                    "Number": "14",
+                    "Author": "athena10.txt",
+                    "Location": "World 3, bridge support right",
+                    "Message": "Athena looked upon the imprisoned titans&( $# moved by their plight. What crimes deserved such punishment? And how did they, in their confinement, avoid the pit of madness?"
+                }
+            ]
+        }
+    ],
+    "reading_gaol.c33": [
+        {
+            "Number": "15",
+            "Author": "reading_gaol.c33",
+            "Location": "World 3, bridge support left",
+            "Message": "I never saw a man who looked\nWith such a wistful eye\nUpon that little tent of blue\nWhich prisoners call the sky,\nAnd at every drifting cloud that went\nWith sails of silver by.",
+            "Related": [
+                {
+                    "Number": "15",
+                    "Author": "reading_gaol.c33",
+                    "Location": "World 3, bridge support left",
+                    "Message": "I never saw a man who looked\nWith such a wistful eye\nUpon that little tent of blue\nWhich prisoners call the sky,\nAnd at every drifting cloud that went\nWith sails of silver by."
+                }
+            ]
+        },
+        {
+            "Number": "21",
+            "Author": "reading_gaol.c33",
+            "Location": "World 2, between Cube Driver and Haircut",
+            "Message": "I know not whether Laws be right,\nOr whether Laws be wrong;\nAll that we know who lie in gaol\nIs that the wall is strong;\nAnd that each day is like a year,\nA year whose days are long.",
+            "Related": [
+                {
+                    "Number": "21",
+                    "Author": "reading_gaol.c33",
+                    "Location": "World 2, between Cube Driver and Haircut",
+                    "Message": "I know not whether Laws be right,\nOr whether Laws be wrong;\nAll that we know who lie in gaol\nIs that the wall is strong;\nAnd that each day is like a year,\nA year whose days are long."
+                }
+            ]
+        },
+        {
+            "Number": "25",
+            "Author": "reading_gaol.c33",
+            "Location": "World 1, near leprechaun pants",
+            "Message": "At last I saw the shadowed bars,\nLike a lattice wrought in lead,\nMove right across the whitewashed wall\nThat faced my three-plank bed,\nAnd I knew that somewhere in the world\nGod's dreadful dawn was red.",
+            "Related": [
+                {
+                    "Number": "25",
+                    "Author": "reading_gaol.c33",
+                    "Location": "World 1, near leprechaun pants",
+                    "Message": "At last I saw the shadowed bars,\nLike a lattice wrought in lead,\nMove right across the whitewashed wall\nThat faced my three-plank bed,\nAnd I knew that somewhere in the world\nGod's dreadful dawn was red."
+                }
+            ]
+        },
+        {
+            "Number": "33",
+            "Author": "reading_gaol.c33",
+            "Location": "World 4, Goliath right side",
+            "Message": "Yet each man kills the thing he loves\nBy each let this be heard.\nSome do it with a bitter look,\nSome with a flattering word.\nThe coward does it with a kiss,\nThe brave man with a sword!",
+            "Related": [
+                {
+                    "Number": "33",
+                    "Author": "reading_gaol.c33",
+                    "Location": "World 4, Goliath right side",
+                    "Message": "Yet each man kills the thing he loves\nBy each let this be heard.\nSome do it with a bitter look,\nSome with a flattering word.\nThe coward does it with a kiss,\nThe brave man with a sword!"
+                }
+            ]
+        }
+    ],
+    "pascal.lz19": [
+        {
+            "Number": "16",
+            "Author": "pascal.lz19",
+            "Location": "World 3, Harmony",
+            "Message": "All our dignity consists then in thought. By it we must elevate ourselves, and not by space and time which we cannot fill. Let us endeavor to think well; this is the principle of morality.",
+            "Related": [
+                {
+                    "Number": "16",
+                    "Author": "pascal.lz19",
+                    "Location": "World 3, Harmony",
+                    "Message": "All our dignity consists then in thought. By it we must elevate ourselves, and not by space and time which we cannot fill. Let us endeavor to think well; this is the principle of morality."
+                }
+            ]
+        }
+    ],
+    "d_lyrics.html": [
+        {
+            "Number": "17",
+            "Author": "d_lyrics.html",
+            "Location": "World 3, BFF",
+            "Message": "4E6F746 8696E 6720 6C617 3747320666 F726576657220627 5742074686 520636572746169 6E7479206F6 620636 8616E6 7652E",
+            "Related": [
+                {
+                    "Number": "17",
+                    "Author": "d_lyrics.html",
+                    "Location": "World 3, BFF",
+                    "Message": "4E6F746 8696E 6720 6C617 3747320666 F726576657220627 5742074686 520636572746169 6E7479206F6 620636 8616E6 7652E"
+                }
+            ]
+        }
+    ],
+    "lost.mla": [
+        {
+            "Number": "18",
+            "Author": "lost.mla",
+            "Location": "World 3, top of bridge, past purple doors",
+            "Message": "&%$& Here at least\nwe shall be free; the Almighty hath not built Here for his envy, will not drive us hence: Here we may reign secure, and in my choice to reign is worth ambition though in Hell: Better to reign in Hell, than serve in Heaven.",
+            "Related": [
+                {
+                    "Number": "18",
+                    "Author": "lost.mla",
+                    "Location": "World 3, top of bridge, past purple doors",
+                    "Message": "&%$& Here at least\nwe shall be free; the Almighty hath not built Here for his envy, will not drive us hence: Here we may reign secure, and in my choice to reign is worth ambition though in Hell: Better to reign in Hell, than serve in Heaven."
+                }
+            ]
+        }
+    ],
+    "progress_rep31.eml": [
+        {
+            "Number": "19",
+            "Author": "progress_rep31.eml",
+            "Location": "World 2, Bunnyhop",
+            "Message": "44454C45 544544 the recycle bin code is a bit funky but it should do its job even at huge 544544 I've integrated it with the main &f()",
+            "Related": [
+                {
+                    "Number": "19",
+                    "Author": "progress_rep31.eml",
+                    "Location": "World 2, Bunnyhop",
+                    "Message": "44454C45 544544 the recycle bin code is a bit funky but it should do its job even at huge 544544 I've integrated it with the main &f()"
+                }
+            ]
+        }
+    ],
+    "sarabhai5645.dat": [
+        {
+            "Number": "20",
+            "Author": "sarabhai5645.dat",
+            "Location": "World 2, Static Vexer right",
+            "Message": "I think what keeps us going is that we're involved in an act of creation. Creation relieves the burden of ego, and death is all about ego. That's why Alex&% (6",
+            "Related": [
+                {
+                    "Number": "20",
+                    "Author": "sarabhai5645.dat",
+                    "Location": "World 2, Static Vexer right",
+                    "Message": "I think what keeps us going is that we're involved in an act of creation. Creation relieves the burden of ego, and death is all about ego. That's why Alex&% (6"
+                }
+            ]
+        }
+    ],
+    "hassan_gehenna.txt": [
+        {
+            "Number": "22",
+            "Author": "hassan_gehenna.txt",
+            "Location": "World 2, Static Vexer left",
+            "Message": "And what if my soul is heavier than a feather? Who is Anubis to judge me?",
+            "Related": [
+                {
+                    "Number": "22",
+                    "Author": "hassan_gehenna.txt",
+                    "Location": "World 2, Static Vexer left",
+                    "Message": "And what if my soul is heavier than a feather? Who is Anubis to judge me?"
+                }
+            ]
+        }
+    ],
+    "aurelius_meditations.txt": [
+        {
+            "Number": "23",
+            "Author": "aurelius_meditations.txt",
+            "Location": "World 2, behind spawn",
+            "Message": "4C6574206 E6F20 nowhere either with more quiet or more freedom from trouble does a man retire 616374206 than into his own soul 2652064 6F6E65207769 74686F757 420612070 757270 6F7365",
+            "Related": [
+                {
+                    "Number": "23",
+                    "Author": "aurelius_meditations.txt",
+                    "Location": "World 2, behind spawn",
+                    "Message": "4C6574206 E6F20 nowhere either with more quiet or more freedom from trouble does a man retire 616374206 than into his own soul 2652064 6F6E65207769 74686F757 420612070 757270 6F7365"
+                }
+            ]
+        }
+    ],
+    "blake_mhh.html": [
+        {
+            "Number": "24",
+            "Author": "blake_mhh.html",
+            "Location": "World 1, Through a Window ending",
+            "Message": "455252 4F523 Prisons are built with stones of law; brothels with bricks of religion. A2043414E4 E4F5 420434C 45415220 444 1544 1",
+            "Related": [
+                {
+                    "Number": "24",
+                    "Author": "blake_mhh.html",
+                    "Location": "World 1, Through a Window ending",
+                    "Message": "455252 4F523 Prisons are built with stones of law; brothels with bricks of religion. A2043414E4 E4F5 420434C 45415220 444 1544 1"
+                }
+            ]
+        }
+    ],
+    "barbellion_arch.txt": [
+        {
+            "Number": "26",
+            "Author": "barbellion_arch.txt",
+            "Location": "World 1, staircase to Open Field",
+            "Message": "To me the honour is sufficient of belonging to the universe — such a great universe, and so grand a scheme of things. Not even Death can rob me of that honour. For nothing can alter the fact that I have lived; I have been I, if for ever so short a time.",
+            "Related": [
+                {
+                    "Number": "26",
+                    "Author": "barbellion_arch.txt",
+                    "Location": "World 1, staircase to Open Field",
+                    "Message": "To me the honour is sufficient of belonging to the universe — such a great universe, and so grand a scheme of things. Not even Death can rob me of that honour. For nothing can alter the fact that I have lived; I have been I, if for ever so short a time."
+                }
+            ]
+        }
+    ],
+    "stapledon_poetry.doc": [
+        {
+            "Number": "27",
+            "Author": "stapledon_poetry.doc",
+            "Location": "World 1, opposite Swapper door",
+            "Message": "And the souls of the dead shall be gathered\ninto the spirit; and the spirit shall flourish",
+            "Related": [
+                {
+                    "Number": "27",
+                    "Author": "stapledon_poetry.doc",
+                    "Location": "World 1, opposite Swapper door",
+                    "Message": "And the souls of the dead shall be gathered\ninto the spirit; and the spirit shall flourish"
+                }
+            ]
+        }
+    ],
+    "ChurchillCompleteWorks.doc": [
+        {
+            "Number": "28",
+            "Author": "ChurchillCompleteWorks.doc",
+            "Location": "World 1, SCSF",
+            "Message": "Nothing can be more abhorrent to democracy than to imprison a person or keep him in prison because he is unpopular/&&& This is really the test of civilisation.",
+            "Related": [
+                {
+                    "Number": "28",
+                    "Author": "ChurchillCompleteWorks.doc",
+                    "Location": "World 1, SCSF",
+                    "Message": "Nothing can be more abhorrent to democracy than to imprison a person or keep him in prison because he is unpopular/&&& This is really the test of civilisation."
+                }
+            ]
+        }
+    ],
+    "luxemburg_collectedw.lz19": [
+        {
+            "Number": "29",
+            "Author": "luxemburg_collectedw.lz19",
+            "Location": "World 1, left side of Open Field Staircase",
+            "Message": "Freedom is always the freedom of the dissenter. 43414E4 E4F5420444 54C455 445",
+            "Related": [
+                {
+                    "Number": "29",
+                    "Author": "luxemburg_collectedw.lz19",
+                    "Location": "World 1, left side of Open Field Staircase",
+                    "Message": "Freedom is always the freedom of the dissenter. 43414E4 E4F5420444 54C455 445"
+                }
+            ]
+        }
+    ],
+    "einstein_compl.doc": [
+        {
+            "Number": "30",
+            "Author": "einstein_compl.doc",
+            "Location": "World 4, spawn by Air Delivery",
+            "Message": "Without creative, independently thinking and judging personalities the upward development of society is as unthinkable as the development of the individual personality without the nourishing soil of the community.",
+            "Related": [
+                {
+                    "Number": "30",
+                    "Author": "einstein_compl.doc",
+                    "Location": "World 4, spawn by Air Delivery",
+                    "Message": "Without creative, independently thinking and judging personalities the upward development of society is as unthinkable as the development of the individual personality without the nourishing soil of the community."
+                }
+            ]
+        }
+    ],
+    "aristotle_politika.lz19": [
+        {
+            "Number": "31",
+            "Author": "aristotle_politika.lz19",
+            "Location": "World 4, Colliding Beams",
+            "Message": "4A4552 that society is a city, and contains in itself 555341 the end and perfection of government: first founded that we might live, but continued that we may live happily 4C454D",
+            "Related": [
+                {
+                    "Number": "31",
+                    "Author": "aristotle_politika.lz19",
+                    "Location": "World 4, Colliding Beams",
+                    "Message": "4A4552 that society is a city, and contains in itself 555341 the end and perfection of government: first founded that we might live, but continued that we may live happily 4C454D"
+                }
+            ]
+        }
+    ],
+    "aztec3.lvl": [
+        {
+            "Number": "32",
+            "Author": "aztec3.lvl",
+            "Location": "World 4, Goliath right",
+            "Message": "UNKNOWN FILETYPE: CANNOT OPEN FILE",
+            "Related": [
+                {
+                    "Number": "32",
+                    "Author": "aztec3.lvl",
+                    "Location": "World 4, Goliath right",
+                    "Message": "UNKNOWN FILETYPE: CANNOT OPEN FILE"
+                }
+            ]
+        }
+    ],
+    "stapledon1944.tmp": [
+        {
+            "Number": "34",
+            "Author": "stapledon1944.tmp",
+            "Location": "World 4, Air Delivery",
+            "Message": "These three activities, then, intelligence, love and creative action, which are so closely involved in one another, I cannot but feel to be intrinsically good. 474152 4241 47452 E4 44154 &they form the distinctively human kind of behaviour.",
+            "Related": [
+                {
+                    "Number": "34",
+                    "Author": "stapledon1944.tmp",
+                    "Location": "World 4, Air Delivery",
+                    "Message": "These three activities, then, intelligence, love and creative action, which are so closely involved in one another, I cannot but feel to be intrinsically good. 474152 4241 47452 E4 44154 &they form the distinctively human kind of behaviour."
+                }
+            ]
+        }
+    ],
+    "temp.dat": [
+        {
+            "Number": "35",
+            "Author": "temp.dat",
+            "Location": "World 4, Goliath left",
+            "Message": "Whose hands built this city? &f()",
+            "Related": [
+                {
+                    "Number": "35",
+                    "Author": "temp.dat",
+                    "Location": "World 4, Goliath left",
+                    "Message": "Whose hands built this city? &f()"
+                }
+            ]
+        }
+    ]
+}
