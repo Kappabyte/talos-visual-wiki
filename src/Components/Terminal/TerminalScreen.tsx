@@ -57,7 +57,7 @@ export const printTextToScreen = (str: string, count: number, callback: () => vo
             str = "";
         }
     }
-    toAdd = toAdd.replaceAll('\n', '<br>').replaceAll(" ", "&nbsp;")
+    toAdd = toAdd.replaceAll('\n', '<br>')
     text += toAdd
     
     setTimeout(() => {

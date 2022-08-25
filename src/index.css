@@ -25,6 +25,7 @@ body {
   background: black;
   color: lightgray;
   font-size: 2em;
+  overflow: hidden;
 }
 
 h1 {

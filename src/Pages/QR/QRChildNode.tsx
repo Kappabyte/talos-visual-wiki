@@ -55,7 +55,7 @@ const IconClick = (root: string, openCharacters: string[], setOpenCharacters: an
 }
 
 const Icon = (root: string, openCharacters: string[], setOpenCharacters: any, backgroundImage: any, offsetX: number, offsetY: number, localAdditionalYOffset: number) => {
-    return <Group key={root} width={64} height={64} x={offsetX} y={offsetY + localAdditionalYOffset} onClick={() => IconClick(root, openCharacters, setOpenCharacters)}>
+    return <Group key={root} width={64} height={64} x={offsetX} y={offsetY + localAdditionalYOffset} onClick={() => IconClick(root, openCharacters, setOpenCharacters)} onTap={() => IconClick(root, openCharacters, setOpenCharacters)}>
         <Image image={backgroundImage} />
         <Text text={root} width={64} y={64} align="center" fill="#ffffff"></Text>
     </Group>
@@ -73,7 +73,11 @@ const QRCodes = (root: string, qrcodes: Record<string, string[]>, openThreads: s
                     let amount = SPACING_QR_V * (code.Related.length - 1)
                     if(amount > biggestAdditionalOffset) biggestAdditionalOffset = amount;
                     return code.Related.map((related: any, j: number) => {
-                        return <Group key={`${i}.${j}`} width={64} height={64} x={offsetX + (i + 1) * SPACING_QR_H} y={offsetY + j * SPACING_QR_V + localAdditionalYOffset} onClick={() => {
+                        return <Group key={`${i}.${j}`} width={64} height={64} x={offsetX + (i + 1) * SPACING_QR_H} y={offsetY + j * SPACING_QR_V + localAdditionalYOffset} 
+                            onClick={() => {
+                                setOpenThreads([...openThreads.slice(0, openThreads.indexOf(code.Message)), ...openThreads.slice(openThreads.indexOf(code.Message) + 1)])
+                            }}
+                            onTap={() => {
                                 setOpenThreads([...openThreads.slice(0, openThreads.indexOf(code.Message)), ...openThreads.slice(openThreads.indexOf(code.Message) + 1)])
                             }}>
                             <Image image={qrIcon} width={64} height={64} />
@@ -82,7 +86,11 @@ const QRCodes = (root: string, qrcodes: Record<string, string[]>, openThreads: s
                         </Group>
                     })
                 } else {
-                    return <Group key={i} width={64} height={64} x={offsetX + (i + 1) * SPACING_QR_H} y={offsetY + localAdditionalYOffset} onClick={() => {
+                    return <Group key={i} width={64} height={64} x={offsetX + (i + 1) * SPACING_QR_H} y={offsetY + localAdditionalYOffset} 
+                        onClick={() => {
+                            setOpenThreads([...openThreads, code.Message]);
+                        }}
+                        onTap={() => {
                             setOpenThreads([...openThreads, code.Message]);
                         }}>
                         <Image image={qrIcon} width={64} height={64} />

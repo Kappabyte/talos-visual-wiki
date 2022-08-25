@@ -21,8 +21,8 @@ export default ({textFile, setPage}: {textFile: string, setPage: any}) => {
                 let localTerminalFiles: Record<string, {original?: string, translated?: string, meta: string}> = {};
 
                 files.forEach(file => {
-                    let meta = file.substring(file.indexOf("[") + 1, file.indexOf("]"));
-                    let name = file.substring(file.indexOf("]") + 1, file.indexOf("\n"));
+                    let meta = file.substring(file.indexOf("[") + 1, file.indexOf("]"))
+                    let name = file.substring(file.indexOf("]") + 1, file.indexOf("\n"))
                     let content = file.substring(file.indexOf("\n"), file.length - 1);
                     if(!localTerminalFiles[name]) localTerminalFiles[name] = {meta: meta}
                     if(file.startsWith(":original")) {
@@ -73,7 +73,7 @@ export default ({textFile, setPage}: {textFile: string, setPage: any}) => {
         const fileData = terminalFiles[openFile].translated;
         if(!fileData) { setViewToScreen(); return; }
         clearTerminalDocument();
-        printDocumentToScreen(fileData, 5, () => {
+        printDocumentToScreen(fileData, 15, () => {
             let options: Record<string, ()=> void> = {};
             options.Orginal = viewOriginalDocument
             options.Close = () => {
@@ -92,7 +92,7 @@ export default ({textFile, setPage}: {textFile: string, setPage: any}) => {
         const fileData = terminalFiles[openFile].original;
         if(!fileData) { setViewToScreen(); return; }
         clearTerminalDocument();
-        printDocumentToScreen(fileData, 5, () => {
+        printDocumentToScreen(fileData, 15, () => {
             let options: Record<string, ()=> void> = {};
             if(terminalFiles[openFile].translated) {
                 options.Translated = viewTranslatedDocument;

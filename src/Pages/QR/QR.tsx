@@ -51,7 +51,8 @@ export default ({game, setPage}: {game: string, setPage: any}) => {
         <Stage ref={stage} width={size[0]} height={size[1]} onWheel={(e) => {StageScrollEvent(e, width, height, position, setPosition, size)}}>
             {ScrollLayer(stage, width, height, size, position, setPosition)}
             <Layer name="main" x={position[0]} y={position[1]} draggable={true} onDragMove={e => setPosition([e.target.x(), e.target.y()])} dragBoundFunc={(pos) => MainLayerDragBounds(pos, width, height, size)}>
-                {relationships.roots.map((root: string, i: number) => createChildren(root, relationships.characters, characterIcon, qrIcon, openCharacters, setOpenCharacters, openThreads, setOpenThreads, qrcodes, 0, SPACING_V + i * SPACING_V))}
+                <Rect x={-position[0]} y={-position[1]} width={size[0] - PADDING - 10} height={size[1] - PADDING - 10}/>
+                {relationships.roots.map((root: string, i: number) => createChildren(root, relationships.characters, characterIcon, qrIcon, openCharacters, setOpenCharacters, openThreads, setOpenThreads, qrcodes, 50, 50 + i * SPACING_V))}
             </Layer>
         </Stage>
         <Back 

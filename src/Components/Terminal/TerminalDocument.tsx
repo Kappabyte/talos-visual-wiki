@@ -43,7 +43,7 @@ export const printDocumentToScreen = (str: string, count: number, callback: () =
     let delay = 5;
     let toAdd = str.substring(0, count)
     textlen = toAdd.length;
-    toAdd = toAdd.replaceAll('\n', '<br>').replaceAll(" ", "&nbsp;")
+    toAdd = toAdd.replaceAll('\n', '<br>')
     text += toAdd
     
     setTimeout(() => {

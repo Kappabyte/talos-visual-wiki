@@ -1,12 +1,15 @@
 import MenuData from "../types/MenuData"
+import Tower from "./Terminals/Tower"
 import WorldA from "./Terminals/WorldA"
+import WorldB from "./Terminals/WorldB"
+import WorldC from "./Terminals/WorldC"
 
 export default (setPage: any, setFile: any) => {
     const terminalTalosMenu = new MenuData("Talos Terminals")
         .addSubMenu("World A", WorldA(setPage, setFile))
-        .addAction("World B", () => {alert("Coming Soon...")})
-        .addAction("World C", () => {alert("Coming Soon...")})
-        .addAction("Tower", () => {alert("Coming Soon...")})
+        .addSubMenu("World B", WorldB(setPage, setFile))
+        .addSubMenu("World C", WorldC(setPage, setFile))
+        .addSubMenu("Tower", Tower(setPage, setFile))
 
     const terminalDemoMenu = new MenuData("Demo Terminals")
         .addAction("Main World", () => {alert("Coming Soon...")})

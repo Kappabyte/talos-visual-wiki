@@ -15,6 +15,12 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .PrevMenu {
+        display: none;
+    }
+}
+
 .PrevMenu {
     animation: MenuPrev2 .3s ease-out 1 forwards;
     position: absolute;

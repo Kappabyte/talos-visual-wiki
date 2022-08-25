@@ -11,3 +11,9 @@
 .graph-holder>div {
     overflow: hidden;
 }
+
+@media screen and (max-width: 1000px) {
+    .graph-holder>h1 {
+        font-size: 8vw;
+    }
+}

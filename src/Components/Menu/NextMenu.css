@@ -7,6 +7,12 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .NextMenu {
+        display: none;
+    }
+}
+
 .NextMenu {
     animation: SpawnNext 0.25s ease-out 1 forwards;
     position: absolute;
