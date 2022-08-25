@@ -20,8 +20,9 @@ function App() {
   const [open] = useSound("assets/terminal_open.mp3");
   const [select] = useSound("assets/terminal_select.mp3");
   const [type] = useSound("assets/terminal_type.mp3");
+  const [type2, {isPlaying}] = useSound("assets/terminal_type2.mp3");
 
-  const sounds = [appear, beep, close_document, close, hover, open_document, open, select, type]; 
+  const sounds = [appear, beep, close_document, close, hover, open_document, open, select, type, type2]; 
 
   let display = <></>
   switch(page) {
@@ -33,6 +34,7 @@ function App() {
       break;
     case 'about':
       display = <Terminal sounds={sounds} headerFile="data/about.eml" documentsFile={`data/about.eml`} setPage={setPage}/>
+      break;
   }
 
   return <>
