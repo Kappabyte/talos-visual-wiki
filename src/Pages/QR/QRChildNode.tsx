@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react';
+import * as Konva from 'konva';
 import { Stage, Layer, Group, Text, Image, Line, Rect } from 'react-konva';
 import { SPACING_H, SPACING_QR_H, SPACING_QR_V, SPACING_V } from './QRProperties';
 
@@ -66,7 +68,7 @@ const QRCodes = (root: string, qrcodes: Record<string, string[]>, openThreads: s
     let biggestAdditionalOffset = 0;
     
     const qr = <>
-        <Line points={[offsetX + 56, offsetY + localAdditionalYOffset + 32, newOffsetX + 56, offsetY + localAdditionalYOffset + 32]} stroke="#ffffff"/>
+        <Rect x={offsetX + 56} y={offsetY + localAdditionalYOffset + 32} width={(newOffsetX + 56) - (offsetX + 56)} height={2} fill="#ffffff"/>
         {
             qrcodes[root].map((code: any, i: number) => {
                 if(openThreads.includes(code.Message)) {
@@ -118,9 +120,13 @@ const Children = (root: string, relationships: any, backgroundImage : HTMLImageE
                     lineAdditionalYOffset += element.amount;
                 }
             });
+        let middleX = (newOffsetX + SPACING_H + 8) / 2 + (newOffsetX - 56) / 2;
+        console.log(middleX);
         let children = <Group key={character}>
             {createChildren(character, relationships, backgroundImage, qrIcon, openCharacters, setOpenCharacters, openThreads, setOpenThreads, qrcodes, newOffsetX + SPACING_H, newOffsetY + i * SPACING_V)}
-            <Line key={`l-${character}`} points={[newOffsetX + 56, offsetY + localAdditionalYOffset + 32, newOffsetX + SPACING_H + 8, newOffsetY + lineAdditionalYOffset + i * SPACING_V + 32]} stroke="#ffffff"/>
+            <Line key={`l-${character}1`} points={[newOffsetX + 56, offsetY + localAdditionalYOffset + 32, middleX, offsetY + localAdditionalYOffset + 32]} stroke="#ffffff"/>
+            <Line key={`l-${character}2`} points={[middleX, offsetY + localAdditionalYOffset + 32, middleX, newOffsetY + lineAdditionalYOffset + i * SPACING_V + 32]} stroke="#ffffff"/>
+            <Line key={`l-${character}3`} points={[middleX, newOffsetY + lineAdditionalYOffset + i * SPACING_V + 32, newOffsetX + SPACING_H + 8, newOffsetY + lineAdditionalYOffset + i * SPACING_V + 32]} stroke="#ffffff"/>
         </Group>
         newOffsetY += relationships[character] ? (relationships[character].length - 1) * SPACING_V :  0;
         return children;

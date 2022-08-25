@@ -35,8 +35,8 @@ export const playCloseTerminalAnimation = () => {
 export const clearTerminal = () => {
     text = "";
 }
-
-export const printTextToScreen = (str: string, count: number, sound: any, beep: any, callback: () => void, defaultDelay = 5, typeEnabled = false) => {
+let lastPlayTime = Date.now();
+export const printTextToScreen = (str: string, count: number, sound: any, type:any, beep: any, callback: () => void, defaultDelay = 5, typeEnabled = false) => {
     if(str == "") {
         callback();
         return;
@@ -78,10 +78,15 @@ export const printTextToScreen = (str: string, count: number, sound: any, beep: 
             forceSoundEnabled: true,
             playbackRate: Math.random() * 2 + 0.5
         });
+    else
+        if(lastPlayTime + 786 < Date.now()) {
+            type();
+            lastPlayTime = Date.now();
+        }
     text += toAdd
     
     setTimeout(() => {
-        printTextToScreen(str.substring(textlen), count, sound, beep, callback, defaultDelay, typeEnabled);
+        printTextToScreen(str.substring(textlen), count, sound, type, beep, callback, defaultDelay, typeEnabled);
     }, delay)
 }
 

@@ -19,6 +19,8 @@ export default ({initialMenuData}: {initialMenuData: MenuData}) => {
     const [nextMenuData, setNextMenuData] = useState<undefined | MenuData>();
     const [playBack] = useSound("assets/back.mp3")
 
+    document.title = currentMenuData.title
+
     return <div className="MenuRenderer"
         onContextMenu={(e) => {
             e.preventDefault();

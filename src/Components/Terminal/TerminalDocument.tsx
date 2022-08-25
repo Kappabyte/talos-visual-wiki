@@ -23,6 +23,7 @@ const colorCodes: Record<string, string> = {
 let text = "";
 let shouldClose = false;
 
+let lastPlayTime = Date.now();
 export const playCloseDocumentAnimation = () => {
     shouldClose = true;
     setTimeout(() => {
@@ -34,7 +35,7 @@ export const clearTerminalDocument = () => {
     text = "";
 }
 
-export const printDocumentToScreen = (str: string, count: number, callback: () => void) => {
+export const printDocumentToScreen = (str: string, count: number, type: any, callback: () => void) => {
     if(str == "") {
         callback();
         return;
@@ -65,9 +66,13 @@ export const printDocumentToScreen = (str: string, count: number, callback: () =
         }
     }
     text += toAdd
+    if(lastPlayTime + 786 < Date.now()) {
+        type();
+        lastPlayTime = Date.now();
+    }
     
     setTimeout(() => {
-        printDocumentToScreen(str.substring(textlen), count, callback);
+        printDocumentToScreen(str.substring(textlen), count, type, callback);
     }, delay)
 }
 

@@ -8,9 +8,8 @@ export default ({documentsFile, headerFile, setPage, sounds}: {documentsFile: st
     const [terminalText, setTerminalText] = useState("")
     const [terminalFiles, setTerminalFiles] = useState<Record<string, {original?: string, translated?: string, meta: string}>>({})
     const [openFile, setOpenFile] = useState<string|undefined>()
-
     //Sounds
-    const [appear, beep, close_document, close, hover, open_document, open, select, type] = sounds;
+    const [appear, beep, close_document, close, hover, open_document, open, select, type, type2] = sounds;
     
     const [options, setOptions] = useState<Record<string, ()=> void>>();
     useEffect(() => {
@@ -47,18 +46,19 @@ export default ({documentsFile, headerFile, setPage, sounds}: {documentsFile: st
 
     const setViewToScreen = () => {
         setOpenFile(undefined);
-        printTextToScreen("\n[guest@local]# ", 10, type, beep, () => {
+        document.title = "Terminal: " + documentsFile.split("/")[documentsFile.split("/").length - 1].split(".")[0];
+        printTextToScreen("\n[guest@local]# ", 10, type, type2, beep, () => {
             let options: Record<string, ()=> void> = {};
             Object.keys(terminalFiles).forEach(file => {
                 options[file] = () => {
-                    printTextToScreen(`<color:light_cyan><type:on>open ${file}<type:off><color:reset>\n`, 1, type, beep, () => {
+                    printTextToScreen(`<color:light_cyan><type:on>open ${file}<type:off><color:reset>\n`, 1, type, type2, beep, () => {
                         open_document({forceSoundEnabled: true})
                         setOpenFile(file);
                     }, 50);
                 }
             })
             options.Exit = () => {
-                printTextToScreen(`<color:light_cyan>exit<color:reset>\n`, 1, type, beep, () => {
+                printTextToScreen(`<color:light_cyan>exit<color:reset>\n`, 1, type, type2, beep, () => {
                     playCloseTerminalAnimation();
                     setTimeout(() => {
                         close({forceSoundEnabled: true});
@@ -77,7 +77,7 @@ export default ({documentsFile, headerFile, setPage, sounds}: {documentsFile: st
         const fileData = terminalFiles[openFile].translated;
         if(!fileData) { setViewToScreen(); return; }
         clearTerminalDocument();
-        printDocumentToScreen(fileData, 15, () => {
+        printDocumentToScreen(fileData, 15, type2, () => {
             let options: Record<string, ()=> void> = {};
             options.Orginal = viewOriginalDocument
             options.Close = () => {
@@ -86,7 +86,7 @@ export default ({documentsFile, headerFile, setPage, sounds}: {documentsFile: st
                 setTimeout(() => {
                     setViewToScreen();
                     clearTerminalDocument();
-                }, 1100)
+                }, 400)
             }
             appear({forceSoundEnabled: true});
             setOptions(options);
@@ -98,7 +98,9 @@ export default ({documentsFile, headerFile, setPage, sounds}: {documentsFile: st
         const fileData = terminalFiles[openFile].original;
         if(!fileData) { setViewToScreen(); return; }
         clearTerminalDocument();
-        printDocumentToScreen(fileData, 15, () => {
+        document.title = "Terminal: " + openFile;
+        printDocumentToScreen(fileData, 15, type2, () => {
+            document.title = "Terminal: " + openFile;
             let options: Record<string, ()=> void> = {};
             if(terminalFiles[openFile].translated) {
                 options.Translated = viewTranslatedDocument;
@@ -109,7 +111,7 @@ export default ({documentsFile, headerFile, setPage, sounds}: {documentsFile: st
                     close_document({forceSoundEnabled: true});
                     setViewToScreen();
                     clearTerminalDocument();
-                }, 1100)
+                }, 400)
             }
             appear({forceSoundEnabled: true});
             setOptions(options);
@@ -129,9 +131,9 @@ export default ({documentsFile, headerFile, setPage, sounds}: {documentsFile: st
             Object.keys(terminalFiles).forEach((file) => {
                 fileText += `${terminalFiles[file].meta} ${" ".repeat(longestMeta - terminalFiles[file].meta.length)}<color:yellow>${file}<color:reset>\n`
             })
-            console.log(fileText)
-            printTextToScreen(terminalText, 10, type, beep, () => {
-                printTextToScreen(fileText, 10, type, beep, () => {
+            document.title = "Terminal: " + documentsFile.split("/")[documentsFile.split("/").length - 1].split(".")[0];
+            printTextToScreen(terminalText, 10, type, type2, beep, () => {
+                printTextToScreen(fileText, 10, type, type2, beep, () => {
                     setViewToScreen();
                 });
             });

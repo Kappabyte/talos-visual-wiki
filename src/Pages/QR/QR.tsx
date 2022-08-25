@@ -24,6 +24,21 @@ export default ({game, setPage}: {game: string, setPage: any}) => {
 
     const stage = useRef<Konva.Stage>(null);
 
+    switch(game) {
+        case "talos":
+            document.title = "The Talos Principle QR Codes"
+            break;
+        case "demo":
+            document.title = "Talos Demo QR Codes"
+            break;
+        case "gehenna":
+            document.title = "Road to Gehenna QR Codes"
+            break;
+        case "unscannable":
+            document.title = "Talos Unscannable QR Codes"
+            break;
+    }
+
     useEffect(() => {
         fetch(`data/characters/${game}.json`).then(res => res.json().then(json => setRelationships(json)))
         fetch(`data/qr/${game}.json`).then(res => res.json().then(json => setQRCodes(json)))
