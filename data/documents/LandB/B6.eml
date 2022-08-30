@@ -1,0 +1,52 @@
+@(document:original)[eg_src   ???? BCE]osiris11.txt
+"But why," the Dying Man said, "do the gods put all these challenges before us? Why the walls of iron and the gates of light, why the abominable demons guarding the path? Why must our heart be judged to be as light as the feather of Ma'at? Why is the road to Aaru so difficult?"
+
+The Scribe considered these words.
+
+"Some say that once the paths to Aaru were open, but too many sinners came, and the gods made the paths perilous to keep sin at bay. Others say that, being mortals (3), we cannot be worthy of Aaru unless we walk the path of Osiris, and so become Osiris ourselves. But I believe that Aaru could never be reached elsewise; for like the mountain path must be steep, the path to Aaru must be fraught with peril. As steepness and mountain are one, so are peril and paradise. They are inextricable. They create each other."
+
+(1) There is an interesting parallel to this phrase in the Penitential Psalms, wh)$%§&$§&
+
+(2) Here the Scribe appears to be speaking of Osiris /%&( $"%§& &"/// meaning the soul of the deceased, not the god himself.
+
+(3) %4141+§525//52055.504C4/(F4144 
+@(document:translated)[eg_src   ???? BCE]osiris11.txt
+"But why," the Dying Man said, "do the gods put all these challenges before us? Why the walls of iron and the gates of light, why the abominable demons guarding the path? Why must our heart be judged to be as light as the feather of Ma'at? Why is the road to Aaru so difficult?"
+
+The Scribe considered these words.
+
+"Some say that once the paths to Aaru were open, but too many sinners came, and the gods made the paths perilous to keep sin at bay. Others say that, being mortals (3), we cannot be worthy of Aaru unless we walk the path of Osiris, and so become Osiris ourselves. But I believe that Aaru could never be reached elsewise; for like the mountain path must be steep, the path to Aaru must be fraught with peril. As steepness and mountain are one, so are peril and paradise. They are inextricable. They create each other."
+
+(1) There is an interesting parallel to this phrase in the Penitential Psalms, wh)$%§&$§&
+
+(2) Here the Scribe appears to be speaking of Osiris /%&( $"%§& &"/// meaning the soul of the deceased, not the god himself.
+
+(3) %AARU UPLOAD 
+@(document:original)[loc      0000/10/04]REprogress_rep16.eml
+From: Aurora Calvin
+
+To: IAN Mailing List
+
+Subject: RE: Progress Report 16
+
+&gt;This is extremely worrying! If the Link doesn't
+
+&gt;work, the whole project will lead to nothing!
+
+&gt;The hardware team *must* recheck everything ASAP.
+
+Guys, guys, guys. Stop panicking. Look at your code again. In fact, look at line #217 in data_transfer.c. What are those two symbols just before the code?
+
+//
+
+That's right. The code that actually initiates the transfer wasn't even running. I'm guessing you were testing something yesterday and forgot to decommentify it.
+
+The hardware isn't broken, your brains are. :)
+
+Love,
+
+Aurora 
+@(document:original)[lit_arch 1759 CE]choice_of_life.txt
+The whole assembly stood awhile silent and collected.  "Let us return," said Rasselas, "from this scene of mortality. How gloomy would be these mansions of the dead to him who did not know that he should never die; that what now acts shall continue its agency, and what now thinks shall think on forever
+
+[ARCHIVE: 1759CE-F991] [JOHNSON, SAMUEL] [ERROR 556] Homage to you, Osiris, Lord of Eternity, King of the Gods, whose names are manifold/ whose forms are holy, you being of hidden form in the temples, whose Ka is holy. All the gods praise you, for you are the %&$%$ (/ Those that lie here stretched before us, the wise and the powerful of ancient times, warn us to remember the shortness of our present state; they were perhaps snatched away while they were busy, like us, in the choice of life." 

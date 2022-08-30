@@ -1,0 +1,48 @@
+Loading about session<delay:250>.<delay:250>.<delay:250>.<delay:250> Done.
+Connecting network drives<delay:250>.<delay:250>.<delay:250>.<delay:250>.<delay:250>.<delay:250>.<delay:250> <beep>Success!<delay:1000>
+Locating about information<delay:250>.<delay:250>.<delay:250>.<delay:250> [4] distributed resources found
+
+
+About session ready.
+
+><delay:500> <type:on><color:light_cyan>l<delay:50>i<delay:50>s<delay:50>t<delay:50><color:reset><type:off>
+
+Searching resources.<delay:500>.<delay:500>.
+
+<end>
+@(document:original)[webcrawl 2022] Credits.eml
+Code by: Kappabyte
+
+Special Thanks To:
+ • Evil Vasile on Steam for a list of terminal files</li>
+ • The Talos Principle Wiki for file contents and translations
+ • The Talos Principle speedrunning community for a list of QR codes
+ • Croteam and Devolver Digital for the amazing game
+
+Sounds and images are property of Croteam and Devolver Digital.
+This site is not affliated with Croteam or Devolver Digital
+
+@(document:original)[webcrawl 2022] Libraries.lst
+@testing-library/jest-dom: 5.16.5
+@testing-library/react: 13.3.0
+@testing-library/user-event: 13.5.0
+@types/jest: 27.5.2
+@types/node: 16.11.54
+@types/react: 18.0.17
+@types/react-dom: 18.0.6
+csv-parser: 3.0.0
+konva: 8.3.11
+react: 18.2.0
+react-dom: 18.2.0
+react-konva: 18.2.1
+react-scripts: .0.1
+typescript: 4.7.4
+use-image: 1.0.12
+use-sound: 4.0.1
+web-vitals: 2.1.4
+@(document:original)[webcrawl 2022] SourceCode.lnk
+Opening the source on Github<delay:250>.<delay:250>.<delay:250>.<delay:1000>
+<redirect:https://github.com/Kappabyte/talos-visual-wiki>
+@(document:original)[webcrawl 2022] TheTalosPrinciple.lnk
+Opening the Talos Principle on Steam<delay:250>.<delay:250>.<delay:250>.<delay:1000>
+<redirect:https://store.steampowered.com/app/257510/The_Talos_Principle/>

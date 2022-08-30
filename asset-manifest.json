@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/talos-visual-wiki/static/css/main.1f136256.css",
+    "main.js": "/talos-visual-wiki/static/js/main.4a380767.js",
+    "static/js/845.7efce69e.chunk.js": "/talos-visual-wiki/static/js/845.7efce69e.chunk.js",
+    "index.html": "/talos-visual-wiki/index.html",
+    "main.1f136256.css.map": "/talos-visual-wiki/static/css/main.1f136256.css.map",
+    "main.4a380767.js.map": "/talos-visual-wiki/static/js/main.4a380767.js.map",
+    "845.7efce69e.chunk.js.map": "/talos-visual-wiki/static/js/845.7efce69e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f136256.css",
+    "static/js/main.4a380767.js"
+  ]
+}
