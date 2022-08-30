@@ -91,25 +91,26 @@
     align-items: center;
 }
 .Options>div {
-    padding: 6px;
-    width: calc(100% - 24px);
-    height: calc(100% - 24px);
-    margin: 6px;
-    border: 1px solid black;
-    background-color: #333;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin: 6px;
     overflow: hidden;
 }
 
-.Options>div:hover {
+.Options>div>span:hover {
     background-color: #545B6D;
     opacity: 90%;
     transform: translate(2px, 2px);
 }
+
 .Options>div>span {
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    padding: 6px;
     display: block;
     text-align: center;
+    border: 1px solid black;
+    background-color: #333;
     font-family: 'Courier Prime', monospace;
     font-size: 60%;
     top: -60%;

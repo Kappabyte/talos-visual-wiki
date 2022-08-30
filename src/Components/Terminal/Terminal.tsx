@@ -157,7 +157,7 @@ export default ({documentsFile, headerFile, setPage, sounds}: {documentsFile: st
         <div className="Options">
             {
                 options ? Object.keys(options).map(option => {
-                    return <div><span key={option} onMouseEnter={() => hover({forceSoundEnabled: true})} onClick={() => {select({forceSoundEnabled: true}); setOptions(undefined); options[option]()}}>{option}</span></div>
+                    return <div onMouseEnter={() => hover({forceSoundEnabled: true})}><span key={option} onClick={() => {select({forceSoundEnabled: true}); setOptions(undefined); options[option]()}}>{option}</span></div>
                 }) : <></>
             }
         </div>

@@ -6,6 +6,6 @@ export default (setPage: any, setGame: any, setFile: any) => {
     return new MenuData("Talos Wiki")
         .addSubMenu("Terminals", TerminalMenu(setPage, setFile))
         .addSubMenu("Characters & QR Codes", QRMenu(setPage, setGame))
-        .addAction("Sigil Key Puzzles", () => {alert("Coming Soon...")})
+        .addAction("Sigil Key Puzzles", () => {setPage('puzzle')})
         .addAction("About", () => {setPage('about')});
 }

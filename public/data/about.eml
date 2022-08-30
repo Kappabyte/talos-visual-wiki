@@ -39,7 +39,7 @@ react-scripts: .0.1
 typescript: 4.7.4
 use-image: 1.0.12
 use-sound: 4.0.1
-web-vitals: 2.1.
+web-vitals: 2.1.4
 @(document:original)[webcrawl 2022] SourceCode.lnk
 Opening the source on Github<delay:250>.<delay:250>.<delay:250>.<delay:1000>
 <redirect:https://github.com/Kappabyte/talos-visual-wiki>

@@ -1,0 +1,31 @@
+video {
+    width: 100%;
+    position: relative;
+    top: calc(calc(50vh - 64px) - calc(100vw * 0.3958333333)/2);
+}
+
+.Intro>.VideoWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.Intro {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    grid-template-rows: 64px calc(100vh - 128px) 64px;
+}
+
+.Intro>h3 {
+    position: relative;
+    top: -32px;
+    width: 100%;
+    height: 64px;
+    font-size: 1.7vw;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0px 0px 5px;
+}

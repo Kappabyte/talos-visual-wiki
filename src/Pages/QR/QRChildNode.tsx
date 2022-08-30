@@ -68,7 +68,7 @@ const QRCodes = (root: string, qrcodes: Record<string, string[]>, openThreads: s
     let biggestAdditionalOffset = 0;
     
     const qr = <>
-        <Rect x={offsetX + 56} y={offsetY + localAdditionalYOffset + 32} width={(newOffsetX + 56) - (offsetX + 56)} height={2} fill="#ffffff"/>
+        <Rect x={offsetX + 56} y={offsetY + localAdditionalYOffset + 31} width={(newOffsetX + 56) - (offsetX + 56)} height={2} fill="#ffffff"/>
         {
             qrcodes[root].map((code: any, i: number) => {
                 if(openThreads.includes(code.Message)) {
