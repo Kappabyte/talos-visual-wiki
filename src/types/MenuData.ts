@@ -7,7 +7,7 @@ export default class MenuData {
     }
 
     public addAction(text: string, callback: () => void) {
-        const option = new MenuOption;
+        const option = new MenuOption();
         option.title = text;
         option.onClick = callback;
         this.options.push(option);
@@ -15,7 +15,7 @@ export default class MenuData {
     }
 
     public addSubMenu(text: string, subMenu: MenuData) {
-        const option = new MenuOption;
+        const option = new MenuOption();
         option.title = text;
         option.submenu = subMenu;
         this.options.push(option);

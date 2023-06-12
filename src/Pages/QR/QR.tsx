@@ -1,77 +1,80 @@
-import { Stage, Layer, Rect } from 'react-konva';
-import { useEffect, useRef, useState } from "react";
-import useImage from 'use-image'
-import Konva from 'konva';
-
-import "./QR.css"
+import { useEffect, useState } from "react";
 import Back from "../../Components/Back";
-import { PADDING, SPACING_H, SPACING_QR_H, SPACING_V } from "./QRProperties";
-import { additionalYOffset, createChildren } from "./QRChildNode";
-import { CalculateWidthAndHeight } from './QRMath';
-import { MainLayerDragBounds, ScrollLayer, StageScrollEvent } from './QRScrollView';
+import { QRData } from "../../types/QRData";
+import { CharacterModal, LocationModal } from "./CharacterModal";
+import "./QR.css"
 
-export default ({game, setPage}: {game: string, setPage: any}) => {
-    const [relationships, setRelationships] = useState<any>({})
-    const [qrcodes, setQRCodes] = useState<any>({})
+const GAME_NAMES = {
+    'talos': "The Talos Principle",
+    'gehenna': "Road To Gehenna",
+    'demo': "Demo",
+    'unscannable': "Unscannable In-Game"
+}
 
-    const [openCharacters, setOpenCharacters] = useState<string[]>([]);
-    const [openThreads, setOpenThreads] = useState<string[]>([]);
-
-    const [size, setSize] = useState<[number, number]>([window.innerWidth, window.innerHeight - 128]);
-    const [position, setPosition] = useState<[number, number]>([0, 0]);
-    const [characterIcon] = useImage("assets/icon_character.svg");
-    const [qrIcon] = useImage("assets/qr.png");
-
-    const stage = useRef<Konva.Stage>(null);
-
-    switch(game) {
-        case "talos":
-            document.title = "The Talos Principle QR Codes"
-            break;
-        case "demo":
-            document.title = "Talos Demo QR Codes"
-            break;
-        case "gehenna":
-            document.title = "Road to Gehenna QR Codes"
-            break;
-        case "unscannable":
-            document.title = "Talos Unscannable QR Codes"
-            break;
-    }
-
-    useEffect(() => {
-        fetch(`data/characters/${game}.json`).then(res => res.json().then(json => setRelationships(json)))
-        fetch(`data/qr/${game}.json`).then(res => res.json().then(json => setQRCodes(json)))
-
-        window.addEventListener('resize', () => {
-            setSize([window.innerWidth, window.innerHeight - 128]);
-        })
-    }, [])
-
-    // Return Loading Screen if not everything is loaded.
-    if(Object.keys(relationships).length == 0 || Object.keys(qrcodes).length == 0 || !characterIcon || !qrIcon) 
-        return <div className="graph-holder">
-            <h1>Characters/QR Codes</h1>
-            <span>Loading...</span>
-            <a onClick={() => {
-                setPage("main")
-            }}>Back</a>
-        </div>
-    
-    const [width, height] = CalculateWidthAndHeight(relationships, openCharacters, openThreads, qrcodes, size);
-    additionalYOffset.offset = [];
-
-    return <div className="graph-holder">
-        <h1>Characters/QR Codes</h1>
-        <Stage ref={stage} width={size[0]} height={size[1]} onWheel={(e) => {StageScrollEvent(e, width, height, position, setPosition, size)}}>
-            {ScrollLayer(stage, width, height, size, position, setPosition)}
-            <Layer name="main" x={position[0]} y={position[1]} draggable={true} onDragMove={e => setPosition([e.target.x(), e.target.y()])} dragBoundFunc={(pos) => MainLayerDragBounds(pos, width, height, size)}>
-                <Rect x={-position[0]} y={-position[1]} width={size[0] - PADDING - 10} height={size[1] - PADDING - 10}/>
-                {relationships.roots.map((root: string, i: number) => createChildren(root, relationships.characters, characterIcon, qrIcon, openCharacters, setOpenCharacters, openThreads, setOpenThreads, qrcodes, 50, 50 + i * SPACING_V))}
-            </Layer>
-        </Stage>
-        <Back 
-        action={() => {setPage('main')}}
-        sound={true}/>
+const CharacterView = ({game, data, setOpenModal}: {game: string, data: QRData, setOpenModal: any}) => {
+    return <div className="qr-card-view">
+    {Object.values(data.characters).map(character => <div style={{backgroundImage: `url(assets/character.jpg)`}} onClick={() => setOpenModal({type: 'character', value: character.name})}>
+        <h3>{character.name}</h3>
+    </div>
+    )}
     </div>
 }
+
+
+const LocationView = ({game, data, setOpenModal}: {game: string, data: QRData, setOpenModal: any}) => {
+    return <div className="qr-card-view">
+    {Object.values(data.locations.children).map(rootLocation => <div key={rootLocation.fullName} style={{backgroundImage: `url(assets/locations${encodeURIComponent(rootLocation.fullName)}.jpg)`}} onClick={() => setOpenModal({type: 'location', value: rootLocation.fullName})}>
+        <h3>{rootLocation.fullName.substring(1)}</h3>
+    </div>
+    )}
+    </div>
+}
+
+const QR = ({game, setPage}: {game: string, setPage: any}) => {
+
+    const [sorting, setSorting] = useState<'char' | 'loc'>('char')
+
+    const [openModal, setOpenModal] = useState<{
+        type: 'character' | 'location',
+        value: string
+    } | {
+        type: 'closed'
+    }>({type: 'closed'})
+
+    const [openConversations, setOpenConversations] = useState<string[]>([]);
+
+    const [data, setData] = useState<QRData>({
+        characters: {},
+        qrcodes: {},
+        locations: {
+            children: {},
+            fullName: "",
+            qrs: []
+        }
+    });
+
+    useEffect(() => {
+        fetch(`data/qr/${game}.json`).then(data => data.json().then(json => {
+            setData(json as QRData);
+        }))
+    }, [game])
+
+    return <div className="qr-page">
+        <CharacterModal game={game} openModal={openModal} setOpenModal={setOpenModal} data={data} openConversations={openConversations} setOpenConversations={setOpenConversations}/>
+        <LocationModal game={game} openModal={openModal} setOpenModal={setOpenModal} data={data} openConversations={openConversations} setOpenConversations={setOpenConversations}/>
+        <span><h1>{`Qr Codes`}</h1><h1>{(GAME_NAMES as any)[game] as string}</h1></span>
+        <div className='qr-sort'>
+            <h2 className={sorting === "char" ? "active" : ""} onClick={() => {setSorting("char")}}>Characters</h2>
+            <h2 className={sorting === "loc" ? "active" : ""} onClick={() => {setSorting("loc")}}>Locations</h2>
+        </div>
+        {
+            sorting === "char" && <CharacterView game={game} data={data} setOpenModal={setOpenModal} />
+        }
+        { 
+            sorting === "loc" && <LocationView game={game} data={data} setOpenModal={setOpenModal} />
+        }
+        <Back action={() => {setPage('main')}} sound={true} />
+    </div>
+}
+
+export default QR;
