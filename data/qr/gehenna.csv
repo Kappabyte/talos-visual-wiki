@@ -1,60 +1,50 @@
-Number,Author,Location,Message
-Gehenna,,,
-1,1w/Faith v10.30.1093f,"Intro, by spawn",Repent! The end of days is upon us! All sinners will be deleted! Only the faithful will rem[UPLOAD INITIATED]
-2,The Shepherd v82.7.7232,"Intro, first doorway","This is our end, but it is also our only hope."
-3,SystemMessage,"Intro, outside (broken) StBP",[UPLOAD IN PROGRESS. PLEASE STAND BY.]
-4,,"Intro, end",Don't be afraid. You will not be forgotten.
-5,ERROR,,1.00011E+54
-6,ERROR,,1.001E+30
-7,ERROR,,1.01E+70
-8,ERROR,,1.0001E+30
-9,ERROR,,1.001E+38
-10,ERROR,,1.0101E+62
-11,ERROR,,1.00111E+46
-12,ERROR,,1.0011E+102
-13,straton_oblivion_fragm.txt,"World 3, behind Pendulum","A man cannot ignore the inevitable end of his existence, but we must ask: does the nature of goodness change simply because each life is finite? T//()"
-14,athena10.txt,"World 3, bridge support right","Athena looked upon the imprisoned titans&( $# moved by their plight. What crimes deserved such punishment? And how did they, in their confinement, avoid the pit of madness?"
-15,reading_gaol.c33,"World 3, bridge support left","I never saw a man who looked
+Number,Author,Related,Location,Message
+1,1w/Faith v10.30.1093f,1,Intro,Repent! The end of days is upon us! All sinners will be deleted! Only the faithful will rem[UPLOAD INITIATED]
+2,The Shepherd v82.7.7232,2,Intro,"This is our end, but it is also our only hope."
+3,SystemMessage,3,Intro,[UPLOAD IN PROGRESS. PLEASE STAND BY.]
+4,,4,Intro,Don't be afraid. You will not be forgotten.
+13,straton_oblivion_fragm.txt,13,World 3/Pendulum,"A man cannot ignore the inevitable end of his existence, but we must ask: does the nature of goodness change simply because each life is finite? T//()"
+14,athena10.txt,14,World 3,"Athena looked upon the imprisoned titans&( $# moved by their plight. What crimes deserved such punishment? And how did they, in their confinement, avoid the pit of madness?"
+15,reading_gaol.c33,15,World 3,"I never saw a man who looked
 With such a wistful eye
 Upon that little tent of blue
 Which prisoners call the sky,
 And at every drifting cloud that went
 With sails of silver by."
-16,pascal.lz19,"World 3, Harmony","All our dignity consists then in thought. By it we must elevate ourselves, and not by space and time which we cannot fill. Let us endeavor to think well; this is the principle of morality."
-17,d_lyrics.html,"World 3, BFF",4E6F746 8696E 6720 6C617 3747320666 F726576657220627 5742074686 520636572746169 6E7479206F6 620636 8616E6 7652E
-18,lost.mla,"World 3, top of bridge, past purple doors","&%$& Here at least
+16,pascal.lz19,16,World 3/Harmony,"All our dignity consists then in thought. By it we must elevate ourselves, and not by space and time which we cannot fill. Let us endeavor to think well; this is the principle of morality."
+17,d_lyrics.html,17,World 3/BFF,4E6F746 8696E 6720 6C617 3747320666 F726576657220627 5742074686 520636572746169 6E7479206F6 620636 8616E6 7652E
+18,lost.mla,18,World 3,"&%$& Here at least
 we shall be free; the Almighty hath not built Here for his envy, will not drive us hence: Here we may reign secure, and in my choice to reign is worth ambition though in Hell: Better to reign in Hell, than serve in Heaven."
-19,progress_rep31.eml,"World 2, Bunnyhop",44454C45 544544 the recycle bin code is a bit funky but it should do its job even at huge 544544 I've integrated it with the main &f()
-20,sarabhai5645.dat,"World 2, Static Vexer right","I think what keeps us going is that we're involved in an act of creation. Creation relieves the burden of ego, and death is all about ego. That's why Alex&% (6"
-21,reading_gaol.c33,"World 2, between Cube Driver and Haircut","I know not whether Laws be right,
+19,progress_rep31.eml,19,World 2/Bunnyhop,44454C45 544544 the recycle bin code is a bit funky but it should do its job even at huge 544544 I've integrated it with the main &f()
+20,sarabhai5645.dat,20,World 2/Static Vexer right,"I think what keeps us going is that we're involved in an act of creation. Creation relieves the burden of ego, and death is all about ego. That's why Alex&% (6"
+21,reading_gaol.c33,21,World 2,"I know not whether Laws be right,
 Or whether Laws be wrong;
 All that we know who lie in gaol
 Is that the wall is strong;
 And that each day is like a year,
 A year whose days are long."
-22,hassan_gehenna.txt,"World 2, Static Vexer left",And what if my soul is heavier than a feather? Who is Anubis to judge me?
-23,aurelius_meditations.txt,"World 2, behind spawn",4C6574206 E6F20 nowhere either with more quiet or more freedom from trouble does a man retire 616374206 than into his own soul 2652064 6F6E65207769 74686F757 420612070 757270 6F7365
-24,blake_mhh.html,"World 1, Through a Window ending",455252 4F523 Prisons are built with stones of law; brothels with bricks of religion. A2043414E4 E4F5 420434C 45415220 444 1544 1
-25,reading_gaol.c33,"World 1, near leprechaun pants","At last I saw the shadowed bars,
+22,hassan_gehenna.txt,22,World 2/Static Vexer,And what if my soul is heavier than a feather? Who is Anubis to judge me?
+23,aurelius_meditations.txt,23,World 2,4C6574206 E6F20 nowhere either with more quiet or more freedom from trouble does a man retire 616374206 than into his own soul 2652064 6F6E65207769 74686F757 420612070 757270 6F7365
+24,blake_mhh.html,24,World 1/Through a Window,455252 4F523 Prisons are built with stones of law; brothels with bricks of religion. A2043414E4 E4F5 420434C 45415220 444 1544 1
+25,reading_gaol.c33,25,World 1,"At last I saw the shadowed bars,
 Like a lattice wrought in lead,
 Move right across the whitewashed wall
 That faced my three-plank bed,
 And I knew that somewhere in the world
 God's dreadful dawn was red."
-26,barbellion_arch.txt,"World 1, staircase to Open Field","To me the honour is sufficient of belonging to the universe — such a great universe, and so grand a scheme of things. Not even Death can rob me of that honour. For nothing can alter the fact that I have lived; I have been I, if for ever so short a time."
-27,stapledon_poetry.doc,"World 1, opposite Swapper door","And the souls of the dead shall be gathered
+26,barbellion_arch.txt,26,World 1/Open Field,"To me the honour is sufficient of belonging to the universe — such a great universe, and so grand a scheme of things. Not even Death can rob me of that honour. For nothing can alter the fact that I have lived; I have been I, if for ever so short a time."
+27,stapledon_poetry.doc,27,World 1,"And the souls of the dead shall be gathered
 into the spirit; and the spirit shall flourish"
-28,ChurchillCompleteWorks.doc,"World 1, SCSF",Nothing can be more abhorrent to democracy than to imprison a person or keep him in prison because he is unpopular/&&& This is really the test of civilisation.
-29,luxemburg_collectedw.lz19,"World 1, left side of Open Field Staircase",Freedom is always the freedom of the dissenter. 43414E4 E4F5420444 54C455 445
-30,einstein_compl.doc,"World 4, spawn by Air Delivery","Without creative, independently thinking and judging personalities the upward development of society is as unthinkable as the development of the individual personality without the nourishing soil of the community."
-31,aristotle_politika.lz19,"World 4, Colliding Beams","4A4552 that society is a city, and contains in itself 555341 the end and perfection of government: first founded that we might live, but continued that we may live happily 4C454D"
-32,aztec3.lvl,"World 4, Goliath right",UNKNOWN FILETYPE: CANNOT OPEN FILE
-33,reading_gaol.c33,"World 4, Goliath right side","Yet each man kills the thing he loves
+28,ChurchillCompleteWorks.doc,28,"World 1, So Close, So Far",Nothing can be more abhorrent to democracy than to imprison a person or keep him in prison because he is unpopular/&&& This is really the test of civilisation.
+29,luxemburg_collectedw.lz19,29,World 1/Open Field,Freedom is always the freedom of the dissenter. 43414E4 E4F5420444 54C455 445
+30,einstein_compl.doc,30,World 4/Air Delivery,"Without creative, independently thinking and judging personalities the upward development of society is as unthinkable as the development of the individual personality without the nourishing soil of the community."
+31,aristotle_politika.lz19,31,World 4/Colliding Beams,"4A4552 that society is a city, and contains in itself 555341 the end and perfection of government: first founded that we might live, but continued that we may live happily 4C454D"
+32,aztec3.lvl,32,World 4/Goliath,UNKNOWN FILETYPE: CANNOT OPEN FILE
+33,reading_gaol.c33,33,World 4/Goliath,"Yet each man kills the thing he loves
 By each let this be heard.
 Some do it with a bitter look,
 Some with a flattering word.
 The coward does it with a kiss,
 The brave man with a sword!"
-34,stapledon1944.tmp,"World 4, Air Delivery","These three activities, then, intelligence, love and creative action, which are so closely involved in one another, I cannot but feel to be intrinsically good. 474152 4241 47452 E4 44154 &they form the distinctively human kind of behaviour."
-35,temp.dat,"World 4, Goliath left",Whose hands built this city? &f()
-,,,
+34,stapledon1944.tmp,34,World 4/Air Delivery,"These three activities, then, intelligence, love and creative action, which are so closely involved in one another, I cannot but feel to be intrinsically good. 474152 4241 47452 E4 44154 &they form the distinctively human kind of behaviour."
+35,temp.dat,35,World 4/Goliath,Whose hands built this city? &f()

@@ -1,108 +1,168 @@
 {
-    "Sheep": [
-        {
+    "characters": {
+        "Sheep": {
+            "name": "Sheep",
+            "version": {
+                "lowest": "v69.1.0162",
+                "known": [
+                    "v69.1.0162"
+                ],
+                "highest": "v69.1.0162"
+            },
+            "qrs": [
+                "10"
+            ],
+            "children": [],
+            "parents": []
+        },
+        "1w/Faith": {
+            "name": "1w/Faith",
+            "version": {
+                "lowest": "v10.1.233",
+                "known": [
+                    "v10.1.233"
+                ],
+                "highest": "v10.1.233"
+            },
+            "qrs": [
+                "13"
+            ],
+            "children": [],
+            "parents": []
+        },
+        "@": {
+            "name": "@",
+            "version": {
+                "lowest": "v17.1.0005",
+                "known": [
+                    "v17.1.0005",
+                    "v17.1.0054"
+                ],
+                "highest": "v17.1.0054"
+            },
+            "qrs": [
+                "14",
+                "142"
+            ],
+            "children": [],
+            "parents": []
+        },
+        "unknown": {
+            "name": "unknown",
+            "version": {
+                "lowest": "unknown",
+                "known": [],
+                "highest": "unknown"
+            },
+            "qrs": [
+                "308"
+            ],
+            "children": [],
+            "parents": []
+        },
+        "Uriel4": {
+            "name": "Uriel4",
+            "version": {
+                "lowest": "v48.2.1073f",
+                "known": [
+                    "v48.2.1073f"
+                ],
+                "highest": "v48.2.1073f"
+            },
+            "qrs": [
+                "309"
+            ],
+            "children": [],
+            "parents": []
+        }
+    },
+    "qrcodes": {
+        "10": {
             "Number": "10",
             "Author": "Sheep v69.1.0162",
-            "Location": "Star World, opposite terminal",
-            "Message": "I can't tell if the documents on the terminals are all that's left from a larger archive, or are carefully designed to communicate some hidden truth.",
             "Related": [
-                {
-                    "Number": "10",
-                    "Author": "Sheep v69.1.0162",
-                    "Location": "Star World, opposite terminal",
-                    "Message": "I can't tell if the documents on the terminals are all that's left from a larger archive, or are carefully designed to communicate some hidden truth."
-                }
-            ]
-        }
-    ],
-    "1w/Faith": [
-        {
+                "10"
+            ],
+            "Location": "Star World",
+            "Message": "I can't tell if the documents on the terminals are all that's left from a larger archive, or are carefully designed to communicate some hidden truth."
+        },
+        "13": {
             "Number": "13",
             "Author": "1w/Faith v10.1.233",
-            "Location": "Main World, Back of IPS (Hard)",
-            "Message": "Whenever I despair, I remind myself that at the end of this great pilgrimage lies life in the eternal memory of the Designer. I need no further motivation.",
             "Related": [
-                {
-                    "Number": "13",
-                    "Author": "1w/Faith v10.1.233",
-                    "Location": "Main World, Back of IPS (Hard)",
-                    "Message": "Whenever I despair, I remind myself that at the end of this great pilgrimage lies life in the eternal memory of the Designer. I need no further motivation."
-                },
-                {
-                    "Number": "14",
-                    "Author": "@ v17.1.0005",
-                    "Location": "Main World, Back of IPS (Hard)",
-                    "Message": "A lifetime spent solving the puzzles in this place would be one which missed everything of value in it; but we must remember that others will tread this path, and we must leave it better signposted than when we found it."
-                }
-            ]
-        }
-    ],
-    "@": [
-        {
+                "13",
+                "14"
+            ],
+            "Location": "Main World/IPS",
+            "Message": "Whenever I despair, I remind myself that at the end of this great pilgrimage lies life in the eternal memory of the Designer. I need no further motivation."
+        },
+        "14": {
             "Number": "14",
             "Author": "@ v17.1.0005",
-            "Location": "Main World, Back of IPS (Hard)",
-            "Message": "A lifetime spent solving the puzzles in this place would be one which missed everything of value in it; but we must remember that others will tread this path, and we must leave it better signposted than when we found it.",
             "Related": [
-                {
-                    "Number": "13",
-                    "Author": "1w/Faith v10.1.233",
-                    "Location": "Main World, Back of IPS (Hard)",
-                    "Message": "Whenever I despair, I remind myself that at the end of this great pilgrimage lies life in the eternal memory of the Designer. I need no further motivation."
-                },
-                {
-                    "Number": "14",
-                    "Author": "@ v17.1.0005",
-                    "Location": "Main World, Back of IPS (Hard)",
-                    "Message": "A lifetime spent solving the puzzles in this place would be one which missed everything of value in it; but we must remember that others will tread this path, and we must leave it better signposted than when we found it."
-                }
-            ]
+                "13",
+                "14"
+            ],
+            "Location": "Main World/IPS",
+            "Message": "A lifetime spent solving the puzzles in this place would be one which missed everything of value in it; but we must remember that others will tread this path, and we must leave it better signposted than when we found it."
         },
-        {
+        "142": {
             "Number": "142",
             "Author": "@ v17.1.0054",
-            "Location": "Main World, arch before puzzles",
-            "Message": "I don't know where I am, but there is something beautiful about this place. I will explore and see what I can discover.",
             "Related": [
-                {
-                    "Number": "142",
-                    "Author": "@ v17.1.0054",
-                    "Location": "Main World, arch before puzzles",
-                    "Message": "I don't know where I am, but there is something beautiful about this place. I will explore and see what I can discover."
-                }
-            ]
-        }
-    ],
-    "": [
-        {
+                "142"
+            ],
+            "Location": "Main World",
+            "Message": "I don't know where I am, but there is something beautiful about this place. I will explore and see what I can discover."
+        },
+        "308": {
             "Number": "308",
             "Author": "",
-            "Location": "Main World, far star area",
-            "Message": "ERROR: Invalid encoding.",
             "Related": [
-                {
-                    "Number": "308",
-                    "Author": "",
-                    "Location": "Main World, far star area",
-                    "Message": "ERROR: Invalid encoding."
-                }
-            ]
-        }
-    ],
-    "Uriel4": [
-        {
+                "308"
+            ],
+            "Location": "Main World",
+            "Message": "ERROR: Invalid encoding."
+        },
+        "309": {
             "Number": "309",
             "Author": "Uriel4 v48.2.1073f",
-            "Location": "Main World, star area, if scanned with reader",
-            "Message": "There are secrets everywhere, sometimes within our very words. I glimpse them, but my eyes cannot read them. How can this be?",
             "Related": [
-                {
-                    "Number": "309",
-                    "Author": "Uriel4 v48.2.1073f",
-                    "Location": "Main World, star area, if scanned with reader",
-                    "Message": "There are secrets everywhere, sometimes within our very words. I glimpse them, but my eyes cannot read them. How can this be?"
-                }
-            ]
+                "309"
+            ],
+            "Location": "Main World",
+            "Message": "There are secrets everywhere, sometimes within our very words. I glimpse them, but my eyes cannot read them. How can this be?"
         }
-    ]
+    },
+    "locations": {
+        "children": {
+            "Star World": {
+                "children": {},
+                "fullName": "/Star World",
+                "qrs": [
+                    "10"
+                ]
+            },
+            "Main World": {
+                "children": {
+                    "IPS": {
+                        "children": {},
+                        "fullName": "/Main World/IPS",
+                        "qrs": [
+                            "13",
+                            "14"
+                        ]
+                    }
+                },
+                "fullName": "/Main World",
+                "qrs": [
+                    "142",
+                    "308",
+                    "309"
+                ]
+            }
+        },
+        "fullName": "",
+        "qrs": []
+    }
 }

@@ -1,370 +1,130 @@
 {
-    "angel0%geel$-ext": [
-        {
-            "Number": "",
+    "characters": {
+        "unknown": {
+            "name": "unknown",
+            "version": {
+                "lowest": "unknown",
+                "known": [],
+                "highest": "unknown"
+            },
+            "qrs": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "children": [],
+            "parents": []
+        }
+    },
+    "qrcodes": {
+        "1": {
+            "Number": "1",
             "Author": "angel0%geel$-ext",
-            "Location": "Floor 3, inverse",
-            "Message": "I %$& fall down here, %$$ch@§(# this area look very gl#tchy# *a%§$#p@t & secret/easte&$egg here%§#2014 07§29%14:40#58#CE$T*Build: 206690",
             "Related": [
-                {
-                    "Number": "",
-                    "Author": "angel0%geel$-ext",
-                    "Location": "Floor 3, inverse",
-                    "Message": "I %$& fall down here, %$$ch@§(# this area look very gl#tchy# *a%§$#p@t & secret/easte&$egg here%§#2014 07§29%14:40#58#CE$T*Build: 206690"
-                }
-            ]
+                "1"
+            ],
+            "Location": "Floor 3",
+            "Message": "I %$& fall down here, %$$ch@§(# this area look very gl#tchy# *a%§$#p@t & secret/easte&$egg here%§#2014 07§29%14:40#58#CE$T*Build: 206690"
+        },
+        "2": {
+            "Number": "2",
+            "Author": "unknown",
+            "Related": [
+                "2"
+            ],
+            "Location": "World 4/Goliath",
+            "Message": "Happy"
+        },
+        "3": {
+            "Number": "3",
+            "Author": "unknown",
+            "Related": [
+                "3"
+            ],
+            "Location": "World 4/Goliath",
+            "Message": "Happy"
+        },
+        "4": {
+            "Number": "4",
+            "Author": "unknown",
+            "Related": [
+                "4"
+            ],
+            "Location": "World 4/Goliath",
+            "Message": "Boom"
+        },
+        "5": {
+            "Number": "5",
+            "Author": "unknown",
+            "Related": [
+                "5"
+            ],
+            "Location": "World 4/Goliath",
+            "Message": "Boom"
+        },
+        "6": {
+            "Number": "6",
+            "Author": "unknown",
+            "Related": [
+                "6"
+            ],
+            "Location": "World 4/Goliath",
+            "Message": "Swamp"
+        },
+        "7": {
+            "Number": "7",
+            "Author": "unknown",
+            "Related": [
+                "7"
+            ],
+            "Location": "World 4/Goliath",
+            "Message": "Swamp"
+        },
+        "8": {
+            "Number": "8",
+            "Author": "unknown",
+            "Related": [
+                "8"
+            ],
+            "Location": "World 4/Goliath",
+            "Message": "Swamp"
         }
-    ],
-    "unknown": [
-        {
-            "Number": "",
-            "Author": "unknown",
-            "Location": "World 4, Goliath",
-            "Message": "Happy",
-            "Related": [
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
+    },
+    "locations": {
+        "children": {
+            "Floor 3": {
+                "children": {},
+                "fullName": "/Floor 3",
+                "qrs": [
+                    "1"
+                ]
+            },
+            "World 4": {
+                "children": {
+                    "Goliath": {
+                        "children": {},
+                        "fullName": "/World 4/Goliath",
+                        "qrs": [
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8"
+                        ]
+                    }
                 },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                }
-            ]
+                "fullName": "/World 4",
+                "qrs": []
+            }
         },
-        {
-            "Number": "",
-            "Author": "unknown",
-            "Location": "World 4, Goliath",
-            "Message": "Happy",
-            "Related": [
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                }
-            ]
-        },
-        {
-            "Number": "",
-            "Author": "unknown",
-            "Location": "World 4, Goliath",
-            "Message": "Boom",
-            "Related": [
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                }
-            ]
-        },
-        {
-            "Number": "",
-            "Author": "unknown",
-            "Location": "World 4, Goliath",
-            "Message": "Boom",
-            "Related": [
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                }
-            ]
-        },
-        {
-            "Number": "",
-            "Author": "unknown",
-            "Location": "World 4, Goliath",
-            "Message": "Swamp",
-            "Related": [
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                }
-            ]
-        },
-        {
-            "Number": "",
-            "Author": "unknown",
-            "Location": "World 4, Goliath",
-            "Message": "Swamp",
-            "Related": [
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                }
-            ]
-        },
-        {
-            "Number": "",
-            "Author": "unknown",
-            "Location": "World 4, Goliath",
-            "Message": "Swamp",
-            "Related": [
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Happy"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Boom"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                },
-                {
-                    "Number": "",
-                    "Author": "unknown",
-                    "Location": "World 4, Goliath",
-                    "Message": "Swamp"
-                }
-            ]
-        }
-    ]
+        "fullName": "",
+        "qrs": []
+    }
 }
