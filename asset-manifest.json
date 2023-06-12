@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac0b47c9.css",
-    "main.js": "/static/js/main.1c44682d.js",
-    "static/js/845.573d1438.chunk.js": "/static/js/845.573d1438.chunk.js",
-    "index.html": "/index.html",
-    "main.ac0b47c9.css.map": "/static/css/main.ac0b47c9.css.map",
-    "main.1c44682d.js.map": "/static/js/main.1c44682d.js.map",
-    "845.573d1438.chunk.js.map": "/static/js/845.573d1438.chunk.js.map"
+    "main.css": "/talos-visual-wiki/static/css/main.ac0b47c9.css",
+    "main.js": "/talos-visual-wiki/static/js/main.5fae0e42.js",
+    "static/js/845.573d1438.chunk.js": "/talos-visual-wiki/static/js/845.573d1438.chunk.js",
+    "index.html": "/talos-visual-wiki/index.html",
+    "main.ac0b47c9.css.map": "/talos-visual-wiki/static/css/main.ac0b47c9.css.map",
+    "main.5fae0e42.js.map": "/talos-visual-wiki/static/js/main.5fae0e42.js.map",
+    "845.573d1438.chunk.js.map": "/talos-visual-wiki/static/js/845.573d1438.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac0b47c9.css",
-    "static/js/main.1c44682d.js"
+    "static/js/main.5fae0e42.js"
   ]
 }
